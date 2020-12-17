@@ -9,5 +9,6 @@ public class EncenderCommand implements Command{
 
   public void execute(){
     receiver.encender();
+    System.out.println("Se ha encendido el dispositivo");
   }
 }
