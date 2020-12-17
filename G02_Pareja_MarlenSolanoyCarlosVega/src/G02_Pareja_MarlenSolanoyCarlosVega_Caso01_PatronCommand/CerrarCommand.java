@@ -1,6 +1,5 @@
 package G02_Pareja_MarlenSolanoyCarlosVega_Caso01_PatronCommand;
 
-
 public class CerrarCommand implements Command{
   private PuertaReceiver receiver;
 	 
@@ -10,6 +9,7 @@ public class CerrarCommand implements Command{
  
   @Override 
 	public void execute() {
-		receiver.cerrar(); 
+    receiver.cerrar();
+    System.out.println("Se ha cerrado la puerta"); 
 	}
 }

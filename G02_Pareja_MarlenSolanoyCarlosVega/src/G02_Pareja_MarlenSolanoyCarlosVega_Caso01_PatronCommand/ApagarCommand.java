@@ -9,5 +9,6 @@ public class ApagarCommand implements Command{
 
   public void execute(){
     receiver.apagar();
+    System.out.println("Se ha apagado el dispositivo");
   }
 }

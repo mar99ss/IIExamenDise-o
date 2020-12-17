@@ -9,5 +9,6 @@ public class DisminuirCommand implements Command{
 
   public void execute(){
     receiver.disminuir();
+    System.out.println("Se ha Disminuido la intensidad");
   }
 }

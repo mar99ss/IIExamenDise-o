@@ -10,7 +10,7 @@ public class AbrirCommand implements Command{
 	@Override 
 	public void execute() { 
 		receiver.abrir();
-		
+		System.out.println("Se ha abierto la puerta");
 	}
     
 }

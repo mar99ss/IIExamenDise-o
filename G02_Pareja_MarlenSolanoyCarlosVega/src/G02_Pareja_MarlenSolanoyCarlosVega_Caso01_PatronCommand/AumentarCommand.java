@@ -9,5 +9,6 @@ public class AumentarCommand implements Command{
 
   public void execute(){
     receiver.aumentar();
+    System.out.println("Se ha aumentado la intensidad");
   }
 }
