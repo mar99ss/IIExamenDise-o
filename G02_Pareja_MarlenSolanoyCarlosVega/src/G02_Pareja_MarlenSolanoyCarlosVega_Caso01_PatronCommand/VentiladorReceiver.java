@@ -4,23 +4,27 @@ public class VentiladorReceiver implements Receiver{
   private int velocidad;
   private Boolean encendido;
   
+  @Override
   public Boolean encender() {
     setEncendido(true);
     setVelocidad(5);
     return isEncendido();
   }
 
+  @Override
   public Boolean apagar() {
     setEncendido(false);
     return isEncendido();
   }
 
+  @Override
   public int aumentar() {
     int velocidadActual = getVelocidad();
     setVelocidad(velocidadActual+1); 
     return getVelocidad();
   }
 
+  @Override
   public int disminuir() {
     int velocidadActual = getVelocidad();
     setVelocidad(velocidadActual-1); 
